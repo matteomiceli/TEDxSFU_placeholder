@@ -1,3 +1,5 @@
+$ted-red: #e61b2e;
+
 * {
     padding: 0px;
     margin: 0px;
@@ -6,9 +8,12 @@
 .container {
     padding: 0 2rem 0 2rem;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1.2fr;
 
     .cover-image {
-        padding-top: 3rem;
+        padding-top: 2rem;
         display: flex;
         justify-content: center;
         width: 100vw;
@@ -24,7 +29,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 50%;
+        height: 100%;
 
         .header {
             font-family: sans-serif;
@@ -52,9 +57,16 @@
                 display: flex;
                 align-items: center;
                 margin-top: 8px;
-
+                width: 12rem;
+                justify-content: space-between;
                 .social-icon {
-                    margin: 0 8px 0 0;
+                    fill: black;
+                    transition: all .2s ease-in-out;
+                    height: 32px;
+                    width: 32px;
+                }
+                .social-icon:hover {
+                    fill: $ted-red;
                 }
             }
         }
@@ -62,6 +74,8 @@
         .logos-container {
             display: flex;
             align-items: center;
+            margin-bottom: 24px;
+
             .logo {
                 height: 25px;
                 margin-right: 20px;
