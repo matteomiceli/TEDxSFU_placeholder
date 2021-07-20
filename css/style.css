@@ -1,3 +1,7 @@
+@font-face {
+  font-family: NeueHaas;
+  src: url(../fonts/NeueHaasVariableV1.2.ttf);
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -28,21 +32,21 @@
   height: 100%;
 }
 .container .content-container .header {
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: "NeueHaas", sans-serif;
+  font-weight: 500;
   font-size: 1.8rem;
   margin-top: 4rem;
 }
 .container .content-container .sub-header {
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: "NeueHaas", sans-serif;
+  font-weight: 500;
   font-size: 0.9rem;
   margin-top: 10px;
 }
 .container .content-container .social-container .social-title {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
+  font-family: "NeueHaas", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 .container .content-container .social-container .social-icons {
   display: flex;

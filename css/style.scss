@@ -1,8 +1,17 @@
 $ted-red: #e61b2e;
 
+@font-face {
+    font-family: NeueHaas;
+    src: url(../fonts/NeueHaasVariableV1.2.ttf);
+}
+
 * {
     padding: 0px;
     margin: 0px;
+}
+
+body {
+
 }
 
 .container {
@@ -32,15 +41,15 @@ $ted-red: #e61b2e;
         height: 100%;
 
         .header {
-            font-family: sans-serif;
-            font-weight: 400;
+            font-family: 'NeueHaas', sans-serif;
+            font-weight: 500;
             font-size: 1.8rem;
             margin-top: 4rem;
         }
     
         .sub-header {
-            font-family: sans-serif;
-            font-weight: 400;
+            font-family: 'NeueHaas', sans-serif;
+            font-weight: 500;
             font-size: .9rem;
             margin-top: 10px;
         }
@@ -48,9 +57,9 @@ $ted-red: #e61b2e;
         .social-container {
 
             .social-title {
-                font-family: sans-serif;
-                font-weight: 400;
-                font-size: .9rem;
+                font-family: 'NeueHaas', sans-serif;
+                font-weight: 500;
+                font-size: 1.1rem;
             }
 
             .social-icons {
