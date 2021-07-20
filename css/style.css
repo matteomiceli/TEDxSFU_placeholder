@@ -4,13 +4,58 @@
 }
 
 .container {
+  padding: 0 2rem 0 2rem;
   height: 100vh;
-  padding: 2rem;
 }
-.container .header {
+.container .cover-image {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 0 -2rem 0 -2rem;
+}
+.container .cover-image .graphic {
+  width: 60%;
+  margin: auto;
+}
+.container .content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+.container .content-container .header {
   font-family: sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1.8rem;
+  margin-top: 4rem;
+}
+.container .content-container .sub-header {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.container .content-container .social-container .social-title {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.container .content-container .social-container .social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.container .content-container .social-container .social-icons .social-icon {
+  margin: 0 8px 0 0;
+}
+.container .content-container .logos-container {
+  display: flex;
+  align-items: center;
+}
+.container .content-container .logos-container .logo {
+  height: 25px;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

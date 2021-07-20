@@ -4,12 +4,68 @@
 }
 
 .container {
+    padding: 0 2rem 0 2rem;
     height: 100vh;
-    padding: 2rem;
 
-    .header {
-        font-family: sans-serif;
-        font-weight: 100;
-        font-size: 1.8rem;
+    .cover-image {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin: 0 -2rem 0 -2rem;
+
+        .graphic {
+            width: 60%;
+            margin:auto;            
+        }    
+    }
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50%;
+
+        .header {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin-top: 4rem;
+        }
+    
+        .sub-header {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: .9rem;
+            margin-top: 10px;
+        }
+
+        .social-container {
+
+            .social-title {
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: .9rem;
+            }
+
+            .social-icons {
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+
+                .social-icon {
+                    margin: 0 8px 0 0;
+                }
+            }
+        }
+
+        .logos-container {
+            display: flex;
+            align-items: center;
+            .logo {
+                height: 25px;
+                margin-right: 20px;
+            }
+        }
     }
 }
