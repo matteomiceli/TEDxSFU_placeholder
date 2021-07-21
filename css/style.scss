@@ -19,7 +19,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 1fr 1.2fr;
+    grid-template-rows: auto 345px;
 
     .cover-image {
         padding-top: 2rem;
@@ -27,11 +27,23 @@ body {
         justify-content: center;
         width: 100vw;
         margin: 0 -2rem 0 -2rem;
-
+        
         .graphic {
-            width: 60%;
+            width: 75%;
             margin:auto;            
-        }    
+        }   
+
+        @media (min-width: 640px) {    
+            .graphic {
+                width: 60%;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .cover-image {
+            display: none;
+        }
     }
 
     .content-container{
@@ -42,9 +54,16 @@ body {
 
         .header {
             font-family: 'NeueHaas', sans-serif;
-            font-weight: 450;
-            font-size: 1.8rem;
-            margin-top: 4rem;
+            font-weight: 400;
+            font-size: 2.2rem;
+            margin-top: 3.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .header {
+                font-size: 2.5rem;
+                width: 330px;
+            }
         }
     
         .sub-header {
@@ -65,20 +84,73 @@ body {
             .social-icons {
                 display: flex;
                 align-items: center;
+                margin-left: -6px;
                 margin-top: 8px;
-                width: 12rem;
-                justify-content: space-between;
+                width: 16rem;
+                // justify-content: space-between;
+
+                .social-icon-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 55px;
+                    height: 45px;
+                }
+                @media (min-width: 640px) {
+                    .social-icon-container {
+                        width: 45px;
+                    }
+                }
+                @media (min-width: 768px) {
+                    .social-icon-container {
+                        width: 40px;
+                    }
+                }
+
                 .social-icon {
                     fill: black;
                     transition: all .2s ease-in-out;
                     height: 32px;
                     width: 32px;
                 }
+
+                @media (min-width: 768px) {
+                    .social-icon {
+                        height: 28px;
+                        width: 28px;
+                    }
+                
+                }
+
                 .social-icon:hover {
                     fill: $ted-red;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                @media (min-width: 768px) {
+                    .social-icon:hover {
+                        height: 36px;
+                        width: 36px;
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {
+                .social-icons {
+                    margin-top: 4px;
+                    margin-left: -6px;
                 }
             }
         }
+
+        @media (min-width: 768px) {    
+            .social-container {
+                grid-row-start: 2;
+                align-self: end;
+                margin-bottom: 12px;
+            }
+        } 
 
         .logos-container {
             display: flex;
@@ -87,8 +159,44 @@ body {
 
             .logo {
                 height: 25px;
-                margin-right: 20px;
+                margin-right: 30px;
             }
+            @media (min-width: 768px) {
+                .social-icon-container {
+                    width: 45px;
+                }
+            }
+
+        }
+        @media (min-width: 768px) {    
+            .logos-container {
+                grid-row-start: 2;
+                align-self: end;
+                justify-self: end;
+            }
+        } 
+    }
+    @media (min-width: 768px) {    
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5fr 1fr;
+            background-image: url('../img/graphic_small.png');
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }      
+    } 
+    @media (min-width: 1024px) {
+        .content-container {    
+            background-size: 35%;
         }
     }
 }
+
+@media (min-width: 768px) {    
+    .container {
+        display: block;
+        padding: 0 4rem 0 4rem;
+    }          
+} 
