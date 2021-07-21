@@ -50,6 +50,10 @@
 @media (min-width: 640px) {
   .container .content-container .header {
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .container .content-container .header {
     width: 330px;
   }
 }
